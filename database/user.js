@@ -12,6 +12,10 @@ const userSchema = new mongoose.Schema({
     blog: {  // normalized approach of defining relationship
         type: mongoose.Types.ObjectId,
         ref: 'Blog'
+    },
+    verified:{
+        type: Boolean,
+        default:false
     }
 }, {
     timestamps: true

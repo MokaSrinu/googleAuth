@@ -6,6 +6,10 @@ const blogSchema = new mongoose.Schema({
     category: {  // normalized approach of defining relationship
         type: mongoose.Types.ObjectId,
         ref: 'Category'
+    },
+    user: {  // normalized approach of defining relationship
+        type: mongoose.Types.ObjectId,
+        ref: 'User'
     }
 }, {
     timestamps: true

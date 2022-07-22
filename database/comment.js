@@ -8,7 +8,7 @@ const commentSchema = new mongoose.Schema({
         ref: 'User'
     },
 
-    // blog: { // embedding approach between comment and post
+    // blog: { // embedding approach between comment and blog
     //     title: String,
     //     id: mongoose.Types.ObjectId
     // }
